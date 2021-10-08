@@ -2,85 +2,81 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
-    >
+    android:orientation="vertical">
 
-   <EditText
-       android:layout_width="match_parent"
-       android:layout_height="wrap_content"
-       android:id="@+id/edit1"
-       />
-
-
-    <Button
-        android:layout_width="match_parent"
+    <EditText
+        android:id="@+id/edit1"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/btnToast"
-        android:text="글자 나타내기"
+        android:layout_margin="10dp"
+        android:hint="숫자1"
+        android:layout_weight="1"
         />
 
-
-    <Button
-        android:layout_width="match_parent"
+    <EditText
+        android:id="@+id/edit2"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/homepage"
-        android:text="홈페이지 열기"
+        android:layout_margin="10dp"
+        android:hint="숫자2"
+        android:layout_weight="1"
         />
 
-
-    <RadioGroup
-        android:layout_width="wrap_content"
+    <Button
+        android:id="@+id/btnAdd"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_gravity="center"
-        >
+        android:layout_margin="10dp"
+        android:hint="더하기"
+        android:layout_weight="1"
+        />
 
-        <RadioButton
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:id="@+id/ridoQ10"
-            android:text="Q10"
-            android:checked="true"
-            />
-
-    </RadioGroup>
-
-
-
-    <RadioGroup
-        android:layout_width="wrap_content"
+    <Button
+        android:id="@+id/btnSub"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_gravity="center"
-        >
+        android:layout_margin="10dp"
+        android:hint="빼기"
+        android:layout_weight="1"
+        />
 
-        <RadioButton
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:id="@+id/ridoR11"
-            android:text="R11"/>
-    </RadioGroup>
-
-
-    <ImageView
-        android:layout_width="wrap_content"
+    <Button
+        android:id="@+id/btnMul"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/ivAndroid"
-        android:layout_gravity="center"
-        android:src="@drawable/q10"/>
+        android:layout_margin="10dp"
+        android:hint="곱하기"
+        android:layout_weight="1"
+        />
 
+    <Button
+        android:id="@+id/btnDiv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:hint="나누기"
+        android:layout_weight="1"
+        />
 
+    <Button
+        android:id="@+id/btnRemain"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:hint="나머지"
+        android:layout_weight="1"
+        />
 
-
-
-
-
-
-
-
-
-
-
-
-
+    <TextView
+        android:id="@+id/textResult"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:hint="계산결과: "
+        android:textSize="30dp"
+        android:textColor="#ff0000"
+        android:layout_weight="1"
+        />
 
 
 
